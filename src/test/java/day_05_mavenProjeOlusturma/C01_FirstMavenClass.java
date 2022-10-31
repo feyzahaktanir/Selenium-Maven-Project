@@ -30,7 +30,7 @@ public class C01_FirstMavenClass {
         searchBox.sendKeys("Samsung headphones"+ Keys.ENTER);
 
         //4-Bulunan sonuç sayısını yazdıralım.
-        System.out.println(driver.findElement(By.xpath("//span[text()='1-16 of 225 results for']")).getText());
+        System.out.println(driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']")).getText());
 
         //5-ilk ürüne tıklayalım
         driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")).click();
